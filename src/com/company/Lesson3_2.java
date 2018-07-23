@@ -18,9 +18,16 @@ public class Lesson3_2 {
 
         if (num1>num2 & num1>num3){
             System.out.println("Max number is"+num1);
+            System.out.println("Min nuber is "+ Math.min(num2,num3));
         }
-        else if (num2>num3 & num2>num1)
-            System.out.println("Max number is"+num2);
-        else System.out.println("Max number is"+num3);
+        else if (num2>num3 & num2>num1) {
+            System.out.println("Max number is " + num2);
+            System.out.println("Min nuber is " + Math.min(num1, num3));
+        }
+        else {
+            System.out.println("Max number is " + num3);
+            System.out.println("Min number is "+ Math.min(num1,num2));
+        }
+
     }
 }
